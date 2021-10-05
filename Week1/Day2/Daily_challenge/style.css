@@ -1,0 +1,82 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+} 
+
+body {
+    font-family: 'Signika Negative', sans-serif;
+}
+
+header {
+    background-color: #00309a;
+    color: white;
+    text-align: right;
+    height: 50px;
+    font-size: 17px;
+    padding: 0 25px;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 25px;
+    text-transform: uppercase;
+}
+
+img {
+    float: left;
+    height: 100%;
+} 
+
+article {
+    background-image: url(https://www.kolpaper.com/wp-content/uploads/2020/03/spider-man-4k-wallpaper-scaled.jpg);
+    height: 100vh;
+    background-size: cover;
+    padding: 30% 0 3% 3%;
+    color: white;
+}
+
+p {
+    width: 45%;
+    margin-top: 15px;
+ }
+
+h1 {
+    text-transform: uppercase;
+    font-size: 27px;
+}
+
+footer {
+    background-color: #00309a;
+    color: white;
+    height: 30px;
+    font-size: 10px;
+    padding: 0 25px;
+}
+
+footer li {
+    margin: 7px 25px 0 0;
+}
+
+/* for phone landscape & smaller */
+@media screen and (min-width: 768px) {
+    header {
+        background-color: rgb(63, 3, 3);
+    }
+}
+
+/* for tablet */
+@media screen and (min-width: 480px) {
+    header {
+        background-color: black;
+    }
+}
+
+/* for tablet landscape */
+@media screen and (max-width: 1024px) {
+    header {
+        background-color: red;
+    }
+}
