@@ -61,22 +61,40 @@ footer li {
 }
 
 /* for phone landscape & smaller */
-@media screen and (min-width: 768px) {
+@media only screen and (max-width: 510px) {
     header {
         background-color: rgb(63, 3, 3);
+        font-size: 7px;
+        height: 15px;
+    }
+
+    li {
+        margin-top: 3px;
     }
 }
 
 /* for tablet */
-@media screen and (min-width: 480px) {
+@media only screen and (min-width: 510px) and (max-width: 768px) {
     header {
         background-color: black;
+        font-size: 10px;
+        height: 20px;
+    }
+
+    li {
+        margin-top: 5px;
     }
 }
 
 /* for tablet landscape */
-@media screen and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
     header {
         background-color: red;
+        font-size: 14px;
+        height: 30px;
+    }
+
+    li {
+        margin-top: 7px;
     }
 }
