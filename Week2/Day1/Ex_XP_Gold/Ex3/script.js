@@ -8,4 +8,14 @@
 let num1 = prompt('To start counting enter the first number');
 let num2 = prompt('Enter the second number');
 
-alert(Number(num1) + Number(num2));
+let sum = Number(num1) + Number(num2);
+alert('The sum is ' + sum);
+
+let substraction = Number(num1) - Number(num2);
+alert('The substraction is ' + substraction);
+
+let mult = Number(num1) * Number(num2);
+alert('The multiplication is ' + mult);
+
+let division = Number(num1) / Number(num2);
+alert('The division is ' +  division);
