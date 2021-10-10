@@ -8,6 +8,4 @@
 let num1 = prompt('To start counting enter the first number');
 let num2 = prompt('Enter the second number');
 
-let sum = num1 + num2;
-
-alert('The sum of two given numbers is ${sum}!');
+alert(Number(num1) + Number(num2));
