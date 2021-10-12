@@ -4,9 +4,11 @@
 function twiceAsYoung(Date1, Date2) {
 
 	if (Date1 > Date2) {
-		return (Date2 * 2 - Date1);
-	} else {
 		return (Date1 * 2 - Date2);
+	} else {
+		return (Date2 * 2 - Date1);
 	};
 
 };	
+
+twiceAsYoung(1992, 1987);
