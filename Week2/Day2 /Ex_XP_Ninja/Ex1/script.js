@@ -10,5 +10,3 @@ function twiceAsYoung(Date1, Date2) {
 	};
 
 };	
-
-twiceAsYoung(1992, 1987);

@@ -13,7 +13,7 @@ let wordBad = str.indexOf("bad");
 
 if (wordBad < wordNot || wordBad === -1 || wordNot === -1) {
 	console.log(str);
-} else if (wordBad > wordNot) {
+} else {
 	let result = str.replace(str.substring(wordNot, (wordBad + 3)), "good");
 	console.log(result);
 };
