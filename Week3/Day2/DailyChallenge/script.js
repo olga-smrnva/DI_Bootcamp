@@ -6,25 +6,34 @@
 // 		(but keep the values entered by the user). The user could click the button at least three times and get a new story. 
 // 		Display the stories randomly.
 
-// const libButton = document.querySelector("#lib-button");
-// const ul = document.querySelectorAll("ul");
-// const li = document.querySelectorAll("li");
+const words = {};
+const libButton = document.querySelector("#lib-button");
+const userInputs = document.querySelectorAll("input");
+const finalStory = document.querySelector("#story");
 
-// function inputLenghtCheck(input) {
-// 	if (input.volume.length > 0) {
-// 		return true;
-// 	};
-// };
+function inputLenghtCheck(input) {
+	if (input.length > 0) {
+		return true;
+	};
+};
 
-// libButton.addEventListener("click", function (event) {
-// 	event.preventDefault();
+libButton.addEventListener("click", function () {
+    let check = true;
+    userInputs.forEach(function (userInput) {
+   		const input = userInput.value;
+   		if (inputLenghtCheck(input)) {
+   			words[userInput.getAttribute("id")] = input;
+  		} else {
+            return check = false;
+        };
+    });
+    if (check) {
+    finalStory.textContent = storyMaker(words);
+    };
+});
 
-// 	li.forEach(function () {
-// 		const input = input.value;
-// 		if (inputLenghtCheck(input)) {
-// 			console.log(input);
-// 		}
-	
-// 	});
-	
-// });
+function storyMaker(words) {
+    return `Once upon a time there lived a ${words.noun} in ${words.adjective} country full of dragons and flamingos. 
+    ${words.person} was the king of that land. He decided to ${words.verb} all the citizens. 
+    Our hero didn't like that, took all the dragons and flamingos away and created his own country, now known as ${words.place}, where they still live happily ;-)`
+};
