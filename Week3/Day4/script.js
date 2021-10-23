@@ -32,43 +32,28 @@ function inputLenghtCheck() {
 	};
 };
 
-
 function addTask(event) {
 	event.preventDefault();
 
 	if (inputLenghtCheck()) {
 		listTasks.push(input.value);
-		
+
 		let newTask = document.createElement("div");
-		newTask.appendChild(document.createTextNode(input.value));
-
-		console.log(newTask);
-
+		
 		let newInput = document.createElement("input");
 		newInput.setAttribute("type", "checkbox");
-
-		console.log(newInput)
-
+	
 		let newButton = document.createElement("button");
 		newButton.setAttribute("font", "awesome");
 		newButton.appendChild(document.createTextNode("X"))
-
-		console.log(newButton)
-
-		newTask.appendChild(newInput);
+		
 		newTask.appendChild(newButton);
-
-		console.log(newTask)
+		newTask.appendChild(newInput);
+		newTask.appendChild(document.createTextNode(input.value));
 		
 		listOfTasks.appendChild(newTask);
 
-		console.log(listOfTasks)
-		
 		input.value = "";
-
-		// listTasks.push(newTask);
-		// console.log(input.value);
-		// console.log(listTasks);
 	} else {
 		alert("Don't forget to add a task!");
 	};
