@@ -15,7 +15,7 @@ let details = ["+200", "-100", "+146", "+167", "-2900", "+100500"];
 let addTaxes = function(arr) {
 	arr.forEach(function(element) { 
 		element = Number(element);
-		element > 0 ? element -= element / 100 * ammountVAT : element;
+		element < 0 ? element += element / 100 * ammountVAT : element;
 		bankAccount += element;
 	});
 	console.log(bankAccount);
