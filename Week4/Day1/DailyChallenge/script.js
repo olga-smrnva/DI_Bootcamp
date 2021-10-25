@@ -36,10 +36,10 @@ let highScore = [];
 let allScore = 0;
 
 gameInfo.forEach(user => allNames.push(user.username + "!"));
-// console.log(allNames);
+console.log(allNames);
 
 gameInfo.forEach(user => user.score > 5 ? highScore.push(user.username) : highScore);
-// console.log(highScore);
+console.log(highScore);
 
 gameInfo.forEach (user => allScore += user.score);
 console.log(allScore);
