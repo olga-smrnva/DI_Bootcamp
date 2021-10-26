@@ -15,6 +15,6 @@ let groceries = {
 let groceriesNew = groceries;
 
 groceries.totalPrice = "35$";
-groceries["other.paid"] = false;
+groceries["other.payed"] = false;
 
 console.log(groceries);
