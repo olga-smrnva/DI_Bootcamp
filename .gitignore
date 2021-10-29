@@ -1,6 +1,7 @@
 *.png
 *.jpeg
 *.jpg
+*.md
 
 # Compiled source #
 ###################
