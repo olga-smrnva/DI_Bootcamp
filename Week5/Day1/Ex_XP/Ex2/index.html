@@ -1,0 +1,23 @@
+<!-- 
+    1. Use the same form structure as Exercise 1.
+    2. When you click the Send button, the form will be submitted with a POST method.
+    (you can use the same HTML file for the action url)
+    3. Where will the sent data appear? Hint : Look at the Network Tab 
+    //The information is in the Network Tab in the Developers Tools-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form2</title>
+</head>
+<body>
+	<form action="index.html" method="POST">
+		Name <br><input name="name" type="text" placeholder="John"><br>
+		Comments <br><textarea name="comment" placeholder="Hello this is a comment" cols="25" rows="5"></textarea><br>
+		<input type="submit" value="Send">
+	</form>
+</body>
+</html>

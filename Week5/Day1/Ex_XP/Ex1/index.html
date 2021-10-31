@@ -1,0 +1,23 @@
+<!-- 1. Create a form like the one above. The form should contain three inputs:
+	• a small text input asking for a name,
+	• a larger textarea input to write a message,
+	• a submit input (“Send”)
+ 2. When you click the Send button, the form will be submitted with a GET method. (you can use the same HTML file for the action url)
+ 3. Where will the sent data appear? //it'll appear in the URL line  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form1</title>
+</head>
+<body>
+	<form action="index.html" method="GET">
+		Name <br><input name="name" type="text" placeholder="John"><br>
+		Comments <br><textarea name="comment" placeholder="Hello this is a comment" cols="25" rows="5"></textarea><br>
+		<input type="submit" value="Send">
+	</form>
+</body>
+</html>
