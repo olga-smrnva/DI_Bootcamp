@@ -28,5 +28,5 @@ let marioGame = {
 	},
   };
 
-  let jsonMario = JSON.stringify(marioGame);
+  const jsonMario = JSON.stringify(marioGame);
   console.log(JSON.stringify(marioGame, null, 4));

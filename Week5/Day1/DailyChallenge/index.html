@@ -1,0 +1,35 @@
+<!-- 1. Create a form with two fields (name, last name) and a submit button. -->
+<!-- 2. When you click the Send button, send the data as JSON.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Daily Challenge</title>
+</head>
+<body>
+	<form action="index.html" id="form">
+		<input id="name" type="text" value="John">
+		<input id="lastname" value="Doe"></input>
+		<input type="submit" value="Send">
+	</form>
+
+	<script>
+		const form = document.getElementById("form");
+		const name = document.getElementById("name");
+		const lastname = document.getElementById("lastname");
+
+		form.addEventListener("submit", event => {
+			event.preventDefault();
+			const fullName = {
+				name: name.value,
+				lastname: lastname.value
+			};
+			const jsonFullName = JSON.stringify(fullName);
+			console.log(jsonFullName);
+		});
+	</script>
+</body>
+</html>
