@@ -1,0 +1,18 @@
+body {
+	height: 100vh;
+	background: linear-gradient(to top left, #b47328, #f8cd9b);
+}
+  
+ #gifs {
+	display: flex;
+	flex-direction: column;
+}
+  
+.gif-container {
+	display: flex;
+}
+  
+.gif {
+	width: 100px;
+	height: auto;
+}
