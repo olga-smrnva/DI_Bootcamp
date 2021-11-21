@@ -21,6 +21,10 @@ class App extends React.Component {
 		console.log('CDM');
 		// fetch('')
 	};
+
+	// componentDidUpdate(){
+	// 	console.log('CDU');
+	// }
 	
 	render() {
 		console.log('render');
