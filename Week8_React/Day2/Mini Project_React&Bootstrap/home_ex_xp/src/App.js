@@ -1,5 +1,5 @@
 import './App.css';
-import "bootstrap/dist/css/bootstrap.min.css"; //Ex2
+import "bootstrap/dist/css/bootstrap.min.css"; //Ex2,4
 
 //Ex1
 const PrintHello = () => {
